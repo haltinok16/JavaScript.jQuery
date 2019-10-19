@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fiyat Listesi</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<p>Audi Fiyat Listesi</p>
+	<div class="box">
+ 	<table class="table">
+        <tr class="active2"onclick="myFunction()">
+          <td>#</td>
+          <td>Araba</td>
+          <td>Modeli</td>
+          <td>Fiyatı</td>
+        </tr>
+        <tr>
+          <td>#</td>
+          <td>Audi A4</td>
+          <td>A4 Sedan</td>
+          <td>278.000 TL</td>
+        </tr>
+        <tr>
+          <td>#</td>
+          <td>Audi A3</td>
+          <td>A3 Sedan</td>
+          <td>150.000 TL</td>
+        </tr>
+		<tr>
+          <td>#</td>
+          <td>Audi A4</td>
+          <td>A4 Allroad quattro</td>
+          <td>472.416 TL</td>
+        </tr>
+        <tr>
+          <td>#</td>
+          <td>Audi A6</td>
+          <td>A6 Sedan</td>
+          <td>762.491 TL</td>
+        </tr>	
+		<tr>
+          <td>#</td>
+          <td>Audi Q3</td>
+          <td>Q3</td>
+          <td>331.642 TL</td>
+        </tr>	
+    </table>
+</div>
+<script>
+	jQuery(document).ready(function($) {  //sayfa hazır olduğunda
+		$("tr").on('click',function() {   //yazılan js ve css içerisindeki(tr:selektörü) içerisine çeker işlev yaptırıyoruz, fonksiyonun içeriğine gönderiyor çalıştırıyor
+			$("tr").removeClass('active2'); //this seçili öğe
+			$(this).addClass('active2') //$tr tüm öğeleri seçer
+		})
+	});
+</script>
+</body>
+</html>
